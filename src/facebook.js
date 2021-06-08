@@ -164,7 +164,7 @@ class FacebookLogin extends React.Component {
   };
 
   click = (e) => {
-    if (!this.state.isSdkLoaded || this.state.isProcessing || this.props.isDisabled) {
+    if ( this.state.isProcessing || this.props.isDisabled) {
       return;
     }
     this.setState({ isProcessing: true });
